@@ -1,0 +1,36 @@
+.header-sec{
+    display:flex;
+    flex-direction:roww;
+    justify-content: space-between;
+    align-items:center;
+
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    height: 70px;
+}
+.left-sec{
+    background-color: rgb(72, 72, 150);
+    width: 200px;
+    margin:10px
+}
+.middle-sec{
+    background-color: rgb(112, 190, 129);
+    flex:1;
+    display: flex;
+    margin-left:30px;
+    max-width: 500px;
+}
+.rghit-sec{
+    background-color: bisque;
+    width: 250px;
+    margin-left:20px;   
+}
+.search-box{
+    flex: 1;
+    height: 25px;
+}
+.search-buttom{
+    height: 25px;
+    margin:2px;
+}

@@ -1,0 +1,16 @@
+    img{
+        width:100%;
+        box-shadow:10px 10px 30px rgb(17, 5, 15);
+        }
+    img:hover{
+        box-shadow:10px 10px 30px rgb(142, 212, 160);
+        cursor:pointer;
+        }
+
+        .image-sec{
+        margin-top:20px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap:20px";
+        }
