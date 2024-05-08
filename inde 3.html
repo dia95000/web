@@ -10,12 +10,6 @@
         </style>
     </HEAD>
     <BODY>
-        <div class="main-title-div">  Air Refreshner</div>
-        <div class="cashOnDelivery-div">
-            <div><img src="img/surprised1.jpg"> </div>
-            <div><img src="img/freeDelivery1.png"></div>
-            <div><img src="img/cashOnDelivery5.jfif"></div>
-        </div>
         <form action="deleveryInfo.php" method="post">
         <div class="main-div">
             <div class="column1">
@@ -40,8 +34,8 @@
                         <div class="item-order-div">
                             <label class="order-checkbox" > Add to Order 
                                 <input type="checkbox" class="order-checkbox1" name="item1" onchange="calculateAmount1()">
+                                <br>
                             </label>
-                            &nbsp &nbsp
                             <label> Quantity </label> 
                             <select class="quantity1" name="quantity1" onchange="calculateAmount1()">
                                 <option value="1">1</option>
@@ -75,8 +69,8 @@
                                 <option value="29">29</option>
                                 <option value="30">30</option>
 
-                            </select> &nbsp &nbsp
-                            <label> Amount </label>&nbsp  
+                            </select> &nbsp; 
+                            <label> Amount </label>  
                             <input name="amount1"  class="amount1" value="0"> RS
                         </div> 
                     </div> 
@@ -105,8 +99,8 @@
                         <div class="item-order-div">
                             <label class="order-checkbox" > Add to Order 
                                 <input type="checkbox" class="order-checkbox2" name="item2" onchange="calculateAmount2()">
+                                <br>
                             </label>
-                            &nbsp &nbsp
                             <label> Quantity </label> 
                             <select class="quantity2" name="quantity2" onchange="calculateAmount2()">
                                 <option value="1">1</option>
@@ -140,7 +134,7 @@
                                 <option value="29">29</option>
                                 <option value="30">30</option>
 
-                            </select> &nbsp &nbsp 
+                            </select> &nbsp; 
                             <label> Amount </label>  
                             <input name="amount2"  class="amount2" value="0"> RS
                         </div> 
@@ -170,8 +164,8 @@
                         <div class="item-order-div">
                             <label class="order-checkbox" > Add to Order 
                                 <input type="checkbox" class="order-checkbox3" name="item3" onchange="calculateAmount3()">
-                                
-                            </label> &nbsp &nbsp
+                                <br>
+                            </label>
                             <label> Quantity </label> 
                             <select class="quantity3" name="quantity3" onchange="calculateAmount3()">
                                 <option value="1">1</option>
@@ -205,7 +199,7 @@
                                 <option value="29">29</option>
                                 <option value="30">30</option>
 
-                            </select> &nbsp &nbsp
+                            </select> &nbsp; 
                             <label> Amount </label>  
                             <input name="amount3"  class="amount3" value="0"> RS
                         </div> 
@@ -217,23 +211,7 @@
 
         <div class="order-summary">
             <div class="totalAmount"> <b>Total Amount = 0 SR</b></div>
-            <div class="continue-button-div"> 
-                <label> Your Name:</label>
-                <input class="customerName" name="customerName" placeholder="Your Name">
-                &nbsp
-                <label>Mobile Number:</label>
-                <input type="text"  class="mobile" name="mobile" size="10">
-                &nbsp
-            </div>
-            <div class="delevery-location-div">    
-                <label>Delevery Location:</label>
-                <select class="location"    name="location">
-                    <option value="Al Dammam">Al Dammam</option>
-                    <option value="Al Khoper">Al Khoper</option>
-                </select> 
-                &nbsp &nbsp   
-                <button type="submit" class="continue-button"> <b>Submite </b></button>
-            </div>
+            <div class="continue-button-div"> <button type="submit" class="continue-button"> <b>Continue </b>to add the delevery information</button></div>
         </div>
         </form>
        <script>

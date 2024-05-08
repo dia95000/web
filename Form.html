@@ -1,0 +1,69 @@
+<style>
+    label{
+        background-color:rgb(18, 32, 3);
+        color: white;
+        font-size:18px;
+        border-width:2px;
+        border-style: solid;
+        border-radius: 8px;
+        padding: 10px;
+        margin:1px;
+    }
+
+    input, select{
+        background-color:rgb(57, 94, 17);
+        color: white;
+        font-size:18px;
+        border-width:2px;
+        border-style: solid;
+        border-radius: 8px;
+        padding: 10px;
+        margin:1px;
+    }
+
+    button{
+        background-color:rgb(18, 32, 3);
+        color: white;
+        font-size:18px;
+        border-width:2px;
+        border-style: solid;
+        border-radius: 8px;
+        padding: 10px;
+        margin:1px;
+    }
+
+    button:hover{
+        color: red;
+        box-shadow: 10px 10px 10px rgb(17, 10, 58);;
+        cursor: pointer        
+    }
+    form{
+        
+        border-color:blue;
+        border-width:2px;
+        border-style: solid;
+        border-radius: 8px;
+        padding:20px;
+    }
+
+
+
+</style>
+
+<form action="conformation.php" method="post">
+    <label> Your Name:</label>
+    <input class="firstName" name="firstName" placeholder="First Name">
+    &nbsp
+    <label> Second Name:</label>
+    <input class="secondName" name="secondName" placeholder="Second Name">
+    <br> <br>
+    <label>Mobile Number:</label>
+    <input class="mobile" name="mobile">
+    &nbsp &nbsp
+    <label>Delevery Location:</label>
+    <select name="location">
+        <option value="Al Dammam">Al Dammam</option>
+        <option value="Al Khoper">Al Khoper</option>
+    </select>
+    <button type="submit"> SUBMITE</button>
+</form>

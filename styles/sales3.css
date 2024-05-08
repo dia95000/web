@@ -1,0 +1,120 @@
+
+.main-div {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius:5px;
+    margin-top:100px;
+    margin-left:150px;
+    margin-right:150px; 
+    
+    
+    
+}
+
+.column1, .column2, .column3{
+    margin:5px;
+}
+
+
+.discription-div {
+    display:flex;
+    flex-direction:column;
+    
+    padding:5px;    
+}
+
+.details-div div{
+
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(44, 12, 12);
+    border-bottom-style:solid;
+    font-size: 16px;
+    font-style: arial;
+    color:rgb(8, 2, 2); 
+    padding-bottom: 5px;
+    
+}
+
+.img-div{
+    padding:10px;
+    background-color: pink;
+    border-radius:10px;
+    border-style:solid;
+    border-size: 2px;
+    border-color: rgb(44, 12, 12);
+}
+
+
+
+.item-order-div{
+    padding-bottom: 50px;
+}
+
+.item-order-div{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color: rgb(207, 50, 136);
+    border-radius: 10px;
+}
+.deal{
+    font-size: 14px;
+    color: rgb(14, 19, 9);
+    font-weight:bold;
+}
+.order-checkbox:hover{
+    cursor: pointer;
+} 
+.amount1, .amount2, .amount3{
+    width: 30px;
+
+}
+.order-summary{
+    display:grid;
+    grid-template-columns: 1fr 2fr ;
+    border-radius:10px;
+    border-left-color: bisque;
+    border-left-width: 2px;
+    border-left-style:solid;
+
+    background-color:rgb(10, 10, 10); 
+    padding:5px;   
+    color:white;
+    
+    position:fixed;
+    left: 400px;
+    right:400px;
+    height:50px;
+    align-items: center;
+    padding-left:20px;  
+    box-shadow: 5px 5px 10px rgb(88, 30, 88);  
+}
+
+.continue-button{
+    font-size:16px;
+    
+height:40px;
+}
+.continue-button:hover{
+    background-color: green;
+    box-shadow: 5px 5px 10px rgb(53, 95, 53);
+    color:white;
+    cursor:pointer;
+}
+.continue-button-div{
+    
+    border-left-color: bisque;
+    border-left-width: 2px;
+    border-left-style:solid;
+    padding-left: 20px;;
+}
+
+.orderDetails, .totalAmount{
+    padding-top: 10px;
+    color:white;
+
+}
+.payment-list{
+    padding-left: 5px;
+}
