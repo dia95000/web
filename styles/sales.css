@@ -33,10 +33,20 @@ padding:10px;
     border-radius:5px;
     margin-top:10px;
     margin-left:50px;
-    margin-right:300px; 
-    
-    
-    
+    margin-right:300px;      
+}
+
+@media (max-width: 1100px) {
+    .main-div {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media ((min-width: 1101px) and (max-width:1500px)) {
+    .main-div {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 .column1, .column2, .column3{
@@ -101,7 +111,7 @@ padding:10px;
 }
 .order-summary{
     display:grid;
-    grid-template-columns: 1fr 2.5fr 2fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-radius:10px;
     border-left-color: bisque;
     border-left-width: 2px;
@@ -110,48 +120,61 @@ padding:10px;
     background-color:rgb(10, 10, 10); 
     padding:5px;   
     color:white;
+   
     
-    left: 165px;
-    right:165px;
-    height:50px;
     align-items: center;
     padding-left:20px;  
     box-shadow: 5px 5px 10px rgb(88, 30, 88); 
 
     margin-left: 60px;
     margin-right:55px;
-    
+    font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+    .order-summary{
+        grid-template-columns: 1fr;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .deleveryInfo, .continue-button-div{
+        padding-top:10px;
+        margin-left:20px;
+    }
+    .totalAmount{
+        padding-bottom:15px;
+       
+    }
 }
 
 .continue-button{
+    background-color: green;
     font-size:16px;
     width:100px;
     height:40px;
+    border-radius:8px;
 }
 .continue-button:hover{
-    background-color: green;
-    box-shadow: 5px 5px 10px rgb(53, 95, 53);
+    background-color: rgb(20, 184, 20);
+    box-shadow: 5px 5px 10px rgb(6, 117, 6);
     color:white;
     cursor:pointer;
 }
-.continue-button-div{
+
+
+.deleveryInfo, .continue-button-div{
     border-left-color: bisque;
     border-left-width: 4px;
-    border-left-style:solid;
-    padding-left: 20px;
-    font-size: 16px;
+    border-left-style:solid;  
+    padding-left: 10px;
 }
 
-.continue-button-div input{
+.deleveryInfo input{
     font-size:18px;
 }
 
-.delevery-location-div select{
+.deleveryInfo select{
     font-size:18px;
-}
-
-.continue-button-div, .delevery-location-div, .totalAmount{
-    background-color:rgb(10, 10, 10); 
 }
 
 

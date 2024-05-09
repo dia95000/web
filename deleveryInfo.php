@@ -22,7 +22,7 @@
             p{
                 font-size:30px;
                 font-style:bold;
-                margin-top:100px;
+                margin-top:20px;
                 margin-left:100px;
             }
 
@@ -40,6 +40,10 @@
     
     <p><u>Your Order Details </u></p>
     <?php
+$customerName = $_POST["customerName"];
+$mobile = $_POST["mobile"]; 
+$location = $_POST["location"];
+
 $item1 = filter_input(INPUT_POST,"item1",FILTER_VALIDATE_BOOL); 
 $itemName1 = "Air Refreshner 1";
 $quantity1 = $_POST["quantity1"];
@@ -60,6 +64,10 @@ $totalOrderAmount = $amount1 + $amount2 + $amount3;
 
 if($item1 || $item2 || $item3)
 {
+    echo "<p> Mr. ".$customerName . " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"
+    . "  Mobile: ".$mobile . " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"
+    . "  Location: ".$location  . "</p>";
+
     echo "<div class='show-result-div'> ". 
                 "<div>". "Item Name" ."  </div> 
                 <div> ". "Item Price" . " </div>
@@ -94,11 +102,11 @@ if($item1 || $item2 || $item3)
             </div>";
         }
 
-    echo "<div class='totalAmount-div'>Total Amount = " . $totalOrderAmount .  " </div>" ;
+    echo "<div class='totalAmount-div'>Total Amount = " . $totalOrderAmount .  " SR </div>" ;
 
 } else
 {
-    echo "<p>You did NOT choose any product !!!!. Please go back to order now</p>" ;
+    die("<p>You did NOT choose any product !!!!. Please go back to order now</p>") ;
 }
 
 ?>
