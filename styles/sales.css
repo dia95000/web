@@ -39,7 +39,10 @@ padding:10px;
 @media (max-width: 1120px) {
     .main-div {
         grid-template-columns: 1fr;
-        font-size:18px;
+       
+    }
+    .details-div div{
+         font-size:18px;
     }
 }
 
