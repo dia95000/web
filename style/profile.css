@@ -1,0 +1,39 @@
+img{
+    background-color: rgb(52, 201, 201);
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 30px;
+    width:300px;
+    height: 400px;
+
+
+}
+    
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+
+}
+@media (max-width:500px) {
+    .main{
+    grid-template-columns: 1fr;
+    }
+    
+}
+@media (min-width:501px) and (max-width:900px) {
+    .main{
+    grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+.col1, .col2, .col3{
+
+   /* border-width: 2px;
+    border-color: pink;
+    border-style: solid;
+    */
+}
