@@ -4,8 +4,8 @@ img{
     border-color: black;
     border-style: solid;
     border-radius: 30px;
-    width:300px;
-    height: 400px;
+    width:500px;
+    height: 600px;
 
 
 }
@@ -17,13 +17,13 @@ img{
    
 
 }
-@media (max-width:500px) {
+@media (max-width:700px) {
     .main{
     grid-template-columns: 1fr;
     }
     
 }
-@media (min-width:501px) and (max-width:900px) {
+@media (min-width:701px) and (max-width:1100px) {
     .main{
     grid-template-columns: 1fr 1fr;
     }
